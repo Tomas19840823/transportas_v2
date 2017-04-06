@@ -15,11 +15,11 @@ maps_test1 <- function(p,n,mydata1,mydata2,veid) {
 
 
   #  n <- length(mydata2[,1])-1
-  p <- autoskaicius1(n,p,mydata1,mydata2)
+  p1 <- autoskaicius1(n,p,mydata1,mydata2)
 
 
 
-  x <- paskirstymas(p,n,mydata1,mydata2,veid)
+  x <- paskirstymas(p1,n,mydata1,mydata2,veid)
   k <- length(x)
   spalva <- c("#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00")
 

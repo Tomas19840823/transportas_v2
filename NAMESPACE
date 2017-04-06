@@ -38,6 +38,7 @@ export(summarauto1)
 export(summarkl)
 export(summarkl1)
 export(veidr)
+export(down)
 
 
 

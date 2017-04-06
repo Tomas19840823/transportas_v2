@@ -1,0 +1,11 @@
+Package: transportas
+Type: Package
+Title: Transport Optimisation Problem
+Version: 0.1.1
+Author: Tomas Usinskas
+Maintainer: Tomas Usinskas <tomas.usinskas@gmail.com>
+Description: Optimizations and distribution problems in transport. Automobile park distribution and route optimization. Route optimizations is using package TSP, function solve_TSP. Nearest neighbor and repetitive nearest neighbor algorithms for symmetric and asymmetric TSPs (Rosenkrantz et al. 1977, <doi:10.1137/0206041>). Distribution problem approach consist of items distribution to automobiles regarding weight restrictions and client’s location (latitude and longitude).
+Encoding: UTF-8
+RoxygenNote: 6.0.1
+License: GPL-2
+Imports: leaflet, TSP, data.table, dplyr, ggmap, googleway, gtools

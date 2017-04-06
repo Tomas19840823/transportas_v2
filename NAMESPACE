@@ -1,0 +1,21 @@
+importFrom("utils", "read.csv")
+importFrom("dplyr", "%>%")
+importFrom("TSP", "TSP")
+importFrom("leaflet", "addMarkers")
+importFrom("leaflet", "addTiles")
+importFrom("data.table", "data.table")
+importFrom("ggmap", "geocode")
+importFrom("googleway", "google_distance")
+importFrom("leaflet", "leaflet")
+importFrom("gtools", "permutations")
+importFrom("leaflet", "setView")
+importFrom("TSP", "solve_TSP")
+importFrom("TSP", "tour_length")
+
+
+
+
+
+
+
+

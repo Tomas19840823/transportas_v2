@@ -1,5 +1,5 @@
-importFrom("utils", "read.csv")
 importFrom("utils", "write.csv")
+importFrom("utils", "read.csv")
 importFrom("dplyr", "%>%")
 importFrom("TSP", "TSP")
 importFrom("leaflet", "addMarkers")

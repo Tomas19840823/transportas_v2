@@ -14,7 +14,7 @@ linkiukas <- function(x) {
   {
     if (i <= length(x)) {
       rez[i,1] <-  x[[i]][[4]]
-      rez[i,2] <- paste("google link: ", x[[i]][[3]],"| atstumas", x[[i]][[2]]$distance.travelled/1000, "km") } else {
+      rez[i,2] <- paste("google link: ", x[[i]][[3]],"| atstumas", round(x[[i]][[2]]$distance.travelled/1000, digits = 0), "km") } else {
         rez[i,1] <-  ""
         rez[i,2] <- "" }
   }

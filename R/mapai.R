@@ -87,12 +87,12 @@ m5 = function(lng,lat,c1,autopav1,spalva,autolegend,autopav) {
 m6 = function(lng,lat,c1,autopav1,spalva,autolegend,autopav) {
   (m <- leaflet() %>% addTiles())
   (z <- m %>% setView(lng = mean(unlist(lng)), lat = mean(unlist(lat)), zoom = 10) %>%
-      addPopups(m, lat = unlist(lat[[1]][1]), lng = unlist(lng[[1]][1]), popup = as.character(unlist(c1[[1]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[1])%>%
-      addPopups(m, lat = unlist(lat[[2]][1]), lng = unlist(lng[[2]][1]), popup = as.character(unlist(c1[[2]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[2])%>%
-      addPopups(m, lat = unlist(lat[[3]][1]), lng = unlist(lng[[3]][1]), popup = as.character(unlist(c1[[3]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[3])%>%
-      addPopups(m, lat = unlist(lat[[4]][1]), lng = unlist(lng[[4]][1]), popup = as.character(unlist(c1[[4]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[4])%>%
-      addPopups(m, lat = unlist(lat[[5]][1]), lng = unlist(lng[[5]][1]), popup = as.character(unlist(c1[[5]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[5])%>%
-      addPopups(m, lat = unlist(lat[[6]][1]), lng = unlist(lng[[6]][1]), popup = as.character(unlist(c1[[6]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[6])%>%
+      addPopups(m, lat = unlist(lat[[1]][1])[-1], lng = unlist(lng[[1]][1])[-1], popup = as.character(unlist(c1[[1]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[1])%>%
+      addPopups(m, lat = unlist(lat[[2]][1])[-1], lng = unlist(lng[[2]][1])[-1], popup = as.character(unlist(c1[[2]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[2])%>%
+      addPopups(m, lat = unlist(lat[[3]][1])[-1], lng = unlist(lng[[3]][1])[-1], popup = as.character(unlist(c1[[3]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[3])%>%
+      addPopups(m, lat = unlist(lat[[4]][1])[-1], lng = unlist(lng[[4]][1])[-1], popup = as.character(unlist(c1[[4]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[4])%>%
+      addPopups(m, lat = unlist(lat[[5]][1])[-1], lng = unlist(lng[[5]][1])[-1], popup = as.character(unlist(c1[[5]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[5])%>%
+      addPopups(m, lat = unlist(lat[[6]][1])[-1], lng = unlist(lng[[6]][1])[-1], popup = as.character(unlist(c1[[6]])),options = popupOptions(closeOnClick = FALSE, closeButton = FALSE,maxHeight = 20), group = autopav1[6])%>%
 
       addCircleMarkers(m, lat = unlist(lat[[1]][1]), lng = unlist(lng[[1]][1]),radius = 10, color = spalva[1], group = autopav[1])%>%
       addCircleMarkers(m, lat = unlist(lat[[2]][1]), lng = unlist(lng[[2]][1]),radius = 10, color = spalva[2], group = autopav[2])%>%

@@ -15,11 +15,11 @@ maps_test1 <- function(p,n,mydata1,mydata2,veid) {
 
 
   #  n <- length(mydata2[,1])-1
-  p1 <- autoskaicius1(n,p,mydata1,mydata2)
+  p <- autoskaicius1(n,p,mydata1,mydata2)
 
 
 
-  x <- paskirstymas(p1,n,mydata1,mydata2,veid)
+  x <- paskirstymas(p,n,mydata1,mydata2,veid)
   k <- length(x)
   spalva <- c("#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ffa100","#ff0000","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00","#00ff23","#00ffd9","#00faff","#0080ff","#7b00ff","#ffcc00","#0033ff","#ff4c00","#00ffcc","#ff00b3","#b3ff00","#ff4c00","#ff4c00","#f3ff00","#a5ff00")
 
@@ -29,8 +29,8 @@ maps_test1 <- function(p,n,mydata1,mydata2,veid) {
   }
 
   autopav1 <- autopav
-  autopav <- paste("pol:", autopav)
-  autopav1 <- paste("mygt:", autopav1)
+  autopav <- paste("ta\u0161kai:", autopav)
+  autopav1 <- paste("eilė:", autopav1)
 
   autolegend <- matrix(rep(0,k),nrow = 1)
 
@@ -57,11 +57,14 @@ maps_test1 <- function(p,n,mydata1,mydata2,veid) {
   for (i in 1:k) {
 
     a <- as.numeric(x[[i]][[2]]$route)
-    a <- a[2:length(a)]
-    a1 <- 1:length(a)
+    a <- a[1:length(a)]
+    a1 <- 0:(length(a)-1)
     c1[[i]] = list(paste(a1,mydata2[a,1],sep = "  | "))
 
   }
+  
+  
+  
 
   z <-  mapai[[k]](lng,lat,c1,autopav1,spalva,autolegend,autopav)
 

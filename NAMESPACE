@@ -39,6 +39,9 @@ export(summarkl)
 export(summarkl1)
 export(veidr)
 export(down)
+export(klientulentele)
+export(autolentele)
+
 
 
 

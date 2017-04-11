@@ -13,5 +13,8 @@ down <- function(x)  {
   }
   m <- m[-1,]
   
+  pav <- c("Klientas","lat", "lon", "svoris", "auto nr", "marsruto km")
+  colnames(m) <- pav
+  
   return(m)
 }

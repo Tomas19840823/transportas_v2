@@ -13,7 +13,7 @@
 
 
 maps_start <- function(p,n,mydata1,mydata2,veid){
-  (m <- leaflet() %>% addTiles())
+  (m <- leaflet() %>% addProviderTiles("Stamen.Toner", group = "Balta / Juoda")  %>% addTiles(group = "OpenStreetMap"))
   (z <- m %>% setView(lng = "25.25562", lat = "54.70204", zoom = 10) )
   return(z)
 }

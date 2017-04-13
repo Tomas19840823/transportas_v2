@@ -15,6 +15,7 @@
 maps_start <- function(p,n,mydata1,mydata2,veid){
   (m <- leaflet()  %>% addTiles(group = "OpenStreetMap") %>% addProviderTiles("Stamen.Toner", group = "Balta / Juoda") )
   (z <- m %>% setView(lng = "25.25562", lat = "54.70204", zoom = 10) )
-  addLayersControl(m, baseGroups = c("Balta / Juoda","Gatvi\u0173 \u017Eem\u0117lapis"))
+  addLayersControl(m, baseGroups = c("Balta / Juoda","Gatvi\u0173 \u017Eem\u0117lapis"),
+                  options = layersControlOptions(collapsed = FALSE))
   return(z)
 }

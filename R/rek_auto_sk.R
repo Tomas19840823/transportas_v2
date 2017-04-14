@@ -12,6 +12,6 @@
 
 rek_auto_sk <- function(n,p,mydata1,mydata2){
   pran <- autoskaicius1(n,p,mydata1,mydata2)
-  pran <- paste("Skaiciuojamas auto skaicius: ", pran, sep = " ")
+#  pran <- paste("Skaiciuojamas auto skaicius: ", pran, sep = " ")
   return(pran)
 }

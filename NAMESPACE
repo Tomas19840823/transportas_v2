@@ -1,4 +1,5 @@
 importFrom("utils", "write.csv")
+importFrom("utils", "write.csv2")
 importFrom("utils", "read.csv")
 importFrom("dplyr", "%>%")
 importFrom("TSP", "TSP")

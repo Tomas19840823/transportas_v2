@@ -50,6 +50,7 @@ kraunam <- function(p,n,veid,mydata2,mydata1) {
     if (i > p) break
     masina <- mydata1[i,]
     klientaisort <- veidr2
+    klientaisort <- klientaisort[order(klientaisort[,2]),]
     z <- autoskaicius2(masina,klientaisort)
     z1[1,i] <- z
     z1[2:(z+1),i] <- rownames(klientaisort)[1:z]
